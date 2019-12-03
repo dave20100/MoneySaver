@@ -3,9 +3,9 @@ package com.example.moneysaver;
 import java.util.ArrayList;
 
 public class PaymentHistory {
-    ArrayList<Payment> Payments;
+    ArrayList<Payment> payments;
 
     public PaymentHistory() {
-        Payments = new ArrayList<>();
+        this.payments = new ArrayList<>();
     }
 }

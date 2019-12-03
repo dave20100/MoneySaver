@@ -1,28 +1,20 @@
 package com.example.moneysaver;
 
 public class Wallet {
-    public int MoneyAmount;
-    public PaymentHistory PaymentHistory;
+    public Owner owner;
+    public int moneyAmount;
+    public PaymentHistory paymentHistory;
 
-    public Wallet(int moneyAmount) {
-        MoneyAmount = moneyAmount;
-        PaymentHistory = new PaymentHistory();
+    public Wallet(int moneyAmount, Owner owner) {
+        this.owner = owner;
+        this.moneyAmount = moneyAmount;
+        this.paymentHistory = new PaymentHistory();
     }
 
-    public com.example.moneysaver.PaymentHistory getPaymentHistory() {
-        return PaymentHistory;
+    public Wallet(Owner owner) {
+        this.owner = owner;
+        this.moneyAmount = 0;
+        this.paymentHistory = new PaymentHistory();
     }
 
-    public Wallet() {
-        MoneyAmount = 0;
-        PaymentHistory = new PaymentHistory();
-    }
-
-    public int getMoneyAmount() {
-        return MoneyAmount;
-    }
-
-    public void setMoneyAmount(int moneyAmount) {
-        MoneyAmount = moneyAmount;
-    }
 }
