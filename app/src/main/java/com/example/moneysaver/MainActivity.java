@@ -20,12 +20,15 @@ public class MainActivity extends AppCompatActivity {
                         PaymentDatabase.class, "payment-database").build();
                 db.paymentDao().clearTable();
                 db.paymentDao().insertAll(new PaymentHistory("asda", 12, "SDA", "1231"));
+                for(PaymentHistory p: db.paymentDao().getAll()) {
+                    Log.i("ASd", "run: " + p.id);
+                }
                 Log.i("The tah", "run: " + db.paymentDao().getAll().get(0).name);
 
                 SalaryDatabase salarydb = Room.databaseBuilder(getApplicationContext(),
                         SalaryDatabase.class, "salary-database").build();
                 salarydb.salaryDao().clearTable();
-                salarydb.salaryDao().insertAll(new SalaryHistory(0, 12));
+                salarydb.salaryDao().insertAll(new SalaryHistory( 12));
                 Log.i("The tah", "run: " + salarydb.salaryDao().getAll().get(0).amount);
             }
         }).start();

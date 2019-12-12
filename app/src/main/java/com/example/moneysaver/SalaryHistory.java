@@ -12,8 +12,7 @@ public class SalaryHistory {
     @ColumnInfo(name = "Amount")
     public int amount;
 
-    public SalaryHistory(int id, int amount) {
-        this.id = id;
+    public SalaryHistory(int amount) {
         this.amount = amount;
     }
 }
