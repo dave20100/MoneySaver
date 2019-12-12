@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MoneySaver</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="get_salary">Add to wallet</string>
+    <string name="show_history">Show Payment History</string>
+    <string name="Graphs">Show Graphs</string>
+    <string name="you_have">You have:</string>
 </resources>
