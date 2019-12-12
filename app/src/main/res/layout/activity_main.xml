@@ -14,7 +14,7 @@
         android:ems="10"
         android:text="@string/you_have"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
