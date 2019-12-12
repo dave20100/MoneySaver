@@ -6,4 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".AddPaymentActivity">
 
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/editText3"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/add_payment_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/editText4"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/salary_amount_hint"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/add_payment_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/editText5"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/enter_type"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/add_payment_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/editText6"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/enter_category"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/add_payment_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <Button
+        android:id="@+id/add_payment_button"
+        android:layout_width="226dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/add"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
