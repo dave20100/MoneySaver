@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".AddSalaryActivity">
 
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="270dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="@string/salary_amount_hint"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/add_salary_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_salary_button"
+        android:layout_width="226dp"
+        android:layout_height="56dp"
+        android:text="@string/add"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
