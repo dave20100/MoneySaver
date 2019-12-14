@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 PaymentDatabase db = Room.databaseBuilder(getApplicationContext(),
                         PaymentDatabase.class, "payment-database").build();
-                db.paymentDao().clearTable();
-                db.paymentDao().insertAll(new PaymentHistory("asda", 12, "SDA", "1231"));
+//                db.paymentDao().clearTable();
                 for(PaymentHistory p: db.paymentDao().getAll()) {
                     Log.i("ASd", "run: " + p.id);
                 }
@@ -32,9 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
                 SalaryDatabase salarydb = Room.databaseBuilder(getApplicationContext(),
                         SalaryDatabase.class, "salary-database").build();
-                salarydb.salaryDao().clearTable();
+//                salarydb.salaryDao().clearTable();
                 salarydb.salaryDao().insertAll(new SalaryHistory( 12));
-                Log.i("The tah", "run: " + salarydb.salaryDao().getAll().get(0).amount);
             }
         }).start();
         }

@@ -8,7 +8,7 @@
 
     <EditText
         android:textAlignment="center"
-        android:id="@+id/editText3"
+        android:id="@+id/nameText"
         android:layout_width="295dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -22,7 +22,7 @@
 
     <EditText
         android:textAlignment="center"
-        android:id="@+id/editText4"
+        android:id="@+id/priceText"
         android:layout_width="295dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -31,12 +31,12 @@
         app:layout_constraintBottom_toTopOf="@+id/add_payment_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
         app:layout_constraintVertical_bias="0.114" />
 
     <EditText
         android:textAlignment="center"
-        android:id="@+id/editText5"
+        android:id="@+id/typeText"
         android:layout_width="295dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -45,12 +45,12 @@
         app:layout_constraintBottom_toTopOf="@+id/add_payment_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/priceText"
         app:layout_constraintVertical_bias="0.176" />
 
     <EditText
         android:textAlignment="center"
-        android:id="@+id/editText6"
+        android:id="@+id/categoryText"
         android:layout_width="295dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -59,7 +59,7 @@
         app:layout_constraintBottom_toTopOf="@+id/add_payment_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/typeText"
         app:layout_constraintVertical_bias="0.346" />
 
     <Button
@@ -67,6 +67,7 @@
         android:layout_width="226dp"
         android:layout_height="56dp"
         android:layout_marginBottom="200dp"
+        android:onClick="AddPayment"
         android:text="@string/add"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

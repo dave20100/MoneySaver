@@ -16,7 +16,6 @@
         android:textAlignment="center"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,9 +27,9 @@
         android:text="@string/show_history"
         app:layout_constraintBottom_toTopOf="@+id/addToWalletButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.874" />
+        app:layout_constraintTop_toBottomOf="@+id/addPaymentButton" />
 
     <Button
         android:id="@+id/addToWalletButton"
@@ -40,9 +39,9 @@
         android:text="@string/get_salary"
         app:layout_constraintBottom_toTopOf="@+id/showGraphsButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.903" />
+        app:layout_constraintTop_toBottomOf="@+id/showHistoryButton" />
 
     <Button
         android:id="@+id/showGraphsButton"
@@ -52,30 +51,30 @@
         android:text="@string/Graphs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.885" />
+        app:layout_constraintTop_toBottomOf="@+id/addToWalletButton" />
 
     <Button
         android:id="@+id/addPaymentButton"
         android:layout_width="339dp"
         android:layout_height="76dp"
+        android:layout_marginTop="32dp"
         android:onClick="openAddPayment"
         android:text="@string/add_payment"
         app:layout_constraintBottom_toTopOf="@+id/showHistoryButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.818" />
+        app:layout_constraintTop_toBottomOf="@+id/moneyAmountText" />
 
     <TextView
         android:id="@+id/moneyAmountText"
-        android:layout_width="315dp"
-        android:layout_height="57dp"
+        android:layout_width="306dp"
+        android:layout_height="52dp"
         android:gravity="center"
         android:textAlignment="center"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/addPaymentButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />

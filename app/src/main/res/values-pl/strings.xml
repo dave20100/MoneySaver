@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoneySaver</string>
+    <string name="Graphs">Poka grafy suko</string>
+    <string name="add">Dodaj</string>
+    <string name="add_payment">Dodaj płatność</string>
+    <string name="enter_category">Kategoria płatności</string>
+    <string name="enter_name">Nazwa płatności</string>
+    <string name="enter_type">Typ płatności</string>
+    <string name="get_salary">Dodaj do portfela</string>
+    <string name="salary_amount_hint">Wpisz wartość</string>
+    <string name="show_history">Pokaż historię płatności</string>
+    <string name="you_have">Masz:</string>
+</resources>
