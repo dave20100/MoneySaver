@@ -36,6 +36,7 @@ public class AddPaymentActivity extends AppCompatActivity {
         categoryList.add("Bills");
         categoryList.add("Transport");
         categoryList.add("Hobby");
+        categoryList.add("Other");
 
         ArrayList<String> typeList = new ArrayList<>();
         typeList.add("Card");
