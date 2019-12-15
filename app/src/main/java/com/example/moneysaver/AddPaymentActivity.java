@@ -53,19 +53,22 @@ public class AddPaymentActivity extends AppCompatActivity {
         typeSpinner.setAdapter(typeArrayAdapter);
     }
 
-    public void AddPayment(View view)
-    {
+    public void AddPayment(View view) throws InterruptedException {
         name = findViewById(R.id.nameText);
         price = findViewById(R.id.priceText);
 
-
-        new Thread(new Runnable() {
+        Thread t;
+        t = new Thread(new Runnable() {
             @Override
             public void run() {
                 PaymentDatabase db = Room.databaseBuilder(getApplicationContext(),
                         PaymentDatabase.class, "payment-database").build();
                 db.paymentDao().insertAll(new PaymentHistory(name.getText().toString(), Integer.parseInt(price.getText().toString()), typeSpinner.getSelectedItem().toString(), categorySpinner.getSelectedItem().toString()));
             }
-        }).start();
+        });
+        t.start();
+        t.join();
+
+        this.finish();
     }
 }

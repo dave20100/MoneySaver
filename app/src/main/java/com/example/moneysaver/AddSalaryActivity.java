@@ -31,5 +31,6 @@ public class AddSalaryActivity extends AppCompatActivity {
                 db.salaryDao().insertAll(new SalaryHistory(Integer.parseInt(amount.getText().toString())));
             }
         }).start();
+        this.finish();
     }
 }
