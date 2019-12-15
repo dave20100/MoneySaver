@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
                 PaymentDatabase.class, "payment-database").build();
         salarydb = Room.databaseBuilder(getApplicationContext(),
                 SalaryDatabase.class, "salary-database").build();
-
         moneyAmountText = findViewById(R.id.moneyAmountText);
     }
 
@@ -41,14 +40,12 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-
                 for(PaymentHistory ph: db.paymentDao().getAll()) {
                     result -= ph.price;
                 }
                 for(SalaryHistory sh: salarydb.salaryDao().getAll()) {
                     result += sh.amount;
                 }
-
                 moneyAmountText.setText(result+" PLN");
             }
         }).start();
