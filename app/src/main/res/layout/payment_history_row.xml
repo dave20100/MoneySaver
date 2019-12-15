@@ -7,8 +7,9 @@
 
     <TextView
         android:id="@+id/priceTextView"
-        android:layout_width="105dp"
+        android:layout_width="138dp"
         android:layout_height="70dp"
+        android:background="#7EBBD6"
         android:gravity="center"
         android:text="TextView"
         android:textSize="25sp"
@@ -17,10 +18,13 @@
 
     <TextView
         android:id="@+id/nameTextView"
-        android:layout_width="192dp"
+        android:layout_width="161dp"
         android:layout_height="70dp"
+        android:background="#42728A"
         android:gravity="center"
         android:text="TextView"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/priceTextView"
         app:layout_constraintTop_toTopOf="@+id/priceTextView" />
 
@@ -28,15 +32,26 @@
         android:id="@+id/typeTextView"
         android:layout_width="110dp"
         android:layout_height="35dp"
+        android:background="@android:color/darker_gray"
         android:text="TextView"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nameTextView" />
 
     <TextView
         android:id="@+id/categoryTextView"
-        android:layout_width="111dp"
+        android:layout_width="110dp"
         android:layout_height="35dp"
+        android:background="#807E7E"
         android:text="TextView"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/typeTextView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         db = Room.databaseBuilder(getApplicationContext(),
                 PaymentDatabase.class, "payment-database").build();
-
         salarydb = Room.databaseBuilder(getApplicationContext(),
                 SalaryDatabase.class, "salary-database").build();
 
@@ -42,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
+
                 for(PaymentHistory ph: db.paymentDao().getAll()) {
                     result -= ph.price;
                 }
