@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     result += sh.amount;
                 }
 
-                moneyAmountText.setText(result+"");
+                moneyAmountText.setText(result+" PLN");
             }
         }).start();
 
